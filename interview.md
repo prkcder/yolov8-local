@@ -91,3 +91,66 @@ While exploring the Roboflow forum, I noticed a UI issue where the page title ov
 some FAQ I created based on the fourm
 (check reddit and support engineer should go there as most users would usually go on reddit)
 
+General Usage
+
+Q: What does the Free Tier include?
+The Free Tier includes up to 10,000 uploaded images, 1,000 hosted inference API calls per month, and full access to core features like annotation, model training, export, and workflows.
+
+Q: What are credits and how are they used?
+Credits are used for tasks like training models, creating new dataset versions, and exporting models. One credit typically equals 30 minutes of GPU training time.
+
+Q: When do credits reset?
+Credits and hosted inference calls reset monthly.
+Annotation and Dataset Management
+
+Q: Can I annotate images manually on the Free Tier?
+Yes, manual annotation is available on all plans, including the Free Tier.
+
+Q: Why are some images not uploading?
+Roboflow may block near-duplicate images from uploading. Try renaming or adjusting the images if needed.
+Model Training
+
+Q: Can I fine-tune a model on the Free Tier?
+Yes, but fine-tuning uses credits. The number of credits required depends on the training time and dataset size.
+
+Q: Can I train a model from a Roboflow Universe dataset?
+Yes, you can clone datasets from Universe and train them as your own project.
+Export and Download
+
+Q: Can I export a trained model on the Free Tier?
+Yes, but exporting uses credits. The number of credits depends on the model type and export format.
+
+Q: Why can’t I export my dataset?
+If you’ve exceeded your generated image limit (from augmentations or multiple versions), you may need to delete extra versions to free up space.
+
+Q: Can I download my source images and annotations without exporting?
+Yes, as long as you’re under your image limit. If export is blocked, it's likely due to augmented/generated images.
+Deployment and Inference
+
+Q: How many inference calls do I get on the Free Tier?
+You get 1,000 hosted inference API calls per month, per workspace.
+
+Q: Do self-hosted deployments count against usage?
+Yes. Whether hosted by Roboflow or self-hosted, API calls and video inference still count toward your usage limits.
+
+Q: Can I deploy to devices like Jetson or Luxonis?
+Yes, Roboflow provides deployment options for edge devices that do not count against hosted API usage.
+Research and Credit Increases
+
+Q: I'm a student or researcher and need more credits. What can I do?
+You can apply for additional credits and support here: https://roboflow.com/contribute
+Troubleshooting and Support
+
+Q: Where can I monitor my usage?
+Go to your Workspace > Settings > Usage to see your current credits, API calls, and generated images.
+
+Q: Where do I get help if I'm stuck?
+Post a question on the Roboflow Forum. Include screenshots, error messages, and a description of the issue for faster help.
+
+
+
+
+
+what i learned and what the format for the txt file should be for the images.
+corresponds to an image (same filename) and contains bounding box annotations for that image. It's how YOLO knows where the object is and what class it belongs to.
+[class_id] [x_center] [y_center] [width] [height]
