@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['License_Plate']
+
+roboflow:
+  workspace: beginner-roboflow
+  project: license-plate-recognition-rxg4e-gdvqj
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/beginner-roboflow/license-plate-recognition-rxg4e-gdvqj/dataset/2
